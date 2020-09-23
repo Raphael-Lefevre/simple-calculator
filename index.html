@@ -13,7 +13,23 @@
         let operand = prompt("operand");
         let secondValue = prompt("Enter the second number");
         secondValue = parseInt(secondValue)
-        console.log(firstValue + secondValue);
+        
+        switch (operand) {
+            case "+" :
+                console.log(firstValue + secondValue);
+                break;
+            case "-" :
+                console.log(firstValue - secondValue);
+                break;
+            case "/" :
+                console.log(firstValue / secondValue);
+                break;
+            case "*" :
+                console.log(firstValue * secondValue);
+                break;
+            default :
+                console.log("Sorry, check your operand");                                               
+        }
     </script>
 </body>
 </html>
